@@ -2,8 +2,7 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
         android:id="@+id/item1"
-        android:title="Title 1"
-        >
+        android:title="Title 1">
 
         <menu>
 
@@ -31,15 +30,13 @@
     </item>
     <item
         android:id="@+id/item2"
-        android:title="Title 2"
-        >
+        android:title="Title 2">
         <menu>
 
             <item
                 android:id="@+id/bongChuyen"
                 android:checkable="true"
-                android:title="Bóng Chuyền"
-                />
+                android:title="Bóng Chuyền" />
             <item
                 android:id="@+id/bongBan"
                 android:checkable="true"
@@ -57,8 +54,7 @@
     </item>
     <item
         android:id="@+id/item3"
-        android:title="Title 4"
-        >
+        android:title="Title 4">
         <menu>
 
             <item

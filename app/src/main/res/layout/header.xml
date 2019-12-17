@@ -1,38 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_width="match_parent"
     android:layout_height="190dp"
     android:background="@drawable/ic_launcher_background"
-    >
+    android:orientation="vertical">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="56dp"
         android:layout_alignParentBottom="true"
         android:orientation="vertical"
-        android:paddingBottom="16dp"
         android:paddingLeft="16dp"
-        >
+        android:paddingBottom="16dp">
+
         <TextView
             android:id="@+id/name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:textSize="14sp"
-            android:text="Phạm Văn Đạt"
-            android:textColor="#FFFFFF"
             android:fontFamily="sans-serif-medium"
             android:gravity="bottom"
-            />
+            android:text="Phạm Văn Đạt"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp" />
+
         <TextView
             android:id="@+id/iD"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:textSize="14sp"
-            android:text="1141460162"
-            android:textColor="#FFFFFF"
             android:fontFamily="sans-serif-medium"
             android:gravity="bottom"
-            />
+            android:text="1141460162"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp" />
     </LinearLayout>
 </RelativeLayout>

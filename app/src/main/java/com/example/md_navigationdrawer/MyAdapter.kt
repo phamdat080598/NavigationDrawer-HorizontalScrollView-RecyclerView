@@ -10,23 +10,24 @@ import androidx.cardview.widget.CardView
 import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.item.view.*
 
-class MyAdapter(var list : MutableList<model>,var listener:OnClickItem):RecyclerView.Adapter<RecyclerView.ViewHolder>() {
-    private  var oldView:CardView? = null
-//    private val TYPE_HEADER = 1
+class MyAdapter(var list: MutableList<model>, var listener: OnClickItem) :
+    RecyclerView.Adapter<RecyclerView.ViewHolder>() {
+    private var oldView: CardView? = null
+    //    private val TYPE_HEADER = 1
 //    private val TYPE_ITEM = 2
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
 //        if(viewType==TYPE_HEADER){
 //            val view:View = LayoutInflater.from(parent.context).inflate(R.layout.header_row,parent,false)
 //            return MyViewHolder1(view)
 //        }else{
-            val view:View = LayoutInflater.from(parent.context).inflate(R.layout.item,parent,false)
-            return MyViewHolder2(view)
+        val view: View = LayoutInflater.from(parent.context).inflate(R.layout.item, parent, false)
+        return MyViewHolder2(view)
 //        }
     }
 
     override fun onBindViewHolder(holder: RecyclerView.ViewHolder, position: Int) {
-        if(holder is MyViewHolder2){
-            holder.bind(list.get(position),listener)
+        if (holder is MyViewHolder2) {
+            holder.bind(list.get(position), listener)
         }
     }
 
@@ -42,15 +43,15 @@ class MyAdapter(var list : MutableList<model>,var listener:OnClickItem):Recycler
 //        }
 //    }
 
-//    private fun checkHeader(possition: Int):Boolean{
+    //    private fun checkHeader(possition: Int):Boolean{
 //        if(possition==0){
 //            return true
 //        }
 //        return false
 //    }
-    inner class MyViewHolder2(var item1: View): RecyclerView.ViewHolder(item1) {
+    inner class MyViewHolder2(var item1: View) : RecyclerView.ViewHolder(item1) {
         @SuppressLint("ResourceAsColor")
-        fun bind(model:model, listener: OnClickItem){
+        fun bind(model: model, listener: OnClickItem) {
             item1.boq_label.text = model.s1
             item1.boq_title.text = model.s2
             item1.boq_unit.text = model.s3
@@ -60,11 +61,11 @@ class MyAdapter(var list : MutableList<model>,var listener:OnClickItem):Recycler
             item1.amo.text = model.s7
             item1.remarks.text = model.s8
             item1.setOnClickListener {
-                if(oldView!=null) {
+                if (oldView != null) {
                     oldView?.setCardBackgroundColor(Color.WHITE)
                 }
                 item1.cardView.setCardBackgroundColor(R.color.colorPrimary)
-                oldView=item1.cardView
+                oldView = item1.cardView
                 listener.onClick(model)
             }
         }
@@ -73,7 +74,7 @@ class MyAdapter(var list : MutableList<model>,var listener:OnClickItem):Recycler
 //    inner class MyViewHolder1(item:View):RecyclerView.ViewHolder(item) {
 //    }
 
-    interface OnClickItem{
+    interface OnClickItem {
         fun onClick(model: model)
     }
 
