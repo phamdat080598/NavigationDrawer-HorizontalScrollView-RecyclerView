@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/item1"
+        android:title="Title 1"
+        >
+
+        <menu>
+
+            <item
+                android:id="@+id/daBong"
+                android:checkable="false"
+                android:title="Đá bóng"
+
+                />
+            <item
+
+                android:id="@+id/cauLong"
+                android:checkable="false"
+                android:title="Cầu Lông"
+
+                />
+            <item
+                android:id="@+id/bongTo"
+                android:checkable="false"
+                android:title="Bóng Rổ"
+
+                />
+
+        </menu>
+    </item>
+    <item
+        android:id="@+id/item2"
+        android:title="Title 2"
+        >
+        <menu>
+
+            <item
+                android:id="@+id/bongChuyen"
+                android:checkable="true"
+                android:title="Bóng Chuyền"
+                />
+            <item
+                android:id="@+id/bongBan"
+                android:checkable="true"
+                android:title="Bóng Bàn"
+
+                />
+            <item
+                android:id="@+id/nhayDay"
+                android:checkable="true"
+                android:title="Nhảy Dây"
+
+                />
+
+        </menu>
+    </item>
+    <item
+        android:id="@+id/item3"
+        android:title="Title 4"
+        >
+        <menu>
+
+            <item
+
+                android:id="@+id/daCau"
+                android:checkable="true"
+                android:title="Đá Cầu"
+
+                />
+            <item
+
+                android:id="@+id/chayBo"
+                android:checkable="true"
+                android:title="Chạy Bộ"
+
+                />
+            <item
+                android:id="@+id/nhayCau"
+                android:checkable="true"
+                android:title="Nhảy Cầu"
+
+                />
+
+        </menu>
+    </item>
+
+</menu>

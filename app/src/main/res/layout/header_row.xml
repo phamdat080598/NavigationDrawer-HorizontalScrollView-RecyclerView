@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="#B4EEEEEE"
+    android:elevation="8dp"
+    >
+
+
+    <TextView
+        android:id="@+id/boq_label"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:maxLines="1"
+        android:padding="8dp"
+        android:text="Item No."
+        android:textAllCaps="true"
+        android:textColor="#000000" />
+
+
+    <TextView
+        android:id="@+id/boq_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="3.5"
+        android:fontFamily="sans-serif-medium"
+        android:includeFontPadding="false"
+        android:maxLines="1"
+        android:padding="8dp"
+        android:text="Description"
+        android:textAllCaps="true"
+        android:textColor="#000000" />
+
+
+    <TextView
+        android:id="@+id/boq_unit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:fontFamily="sans-serif-medium"
+        android:includeFontPadding="false"
+        android:maxLines="1"
+        android:padding="8dp"
+        android:text="Unit"
+        android:textAllCaps="true"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/boq_quantity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:fontFamily="sans-serif-medium"
+        android:includeFontPadding="false"
+        android:padding="8dp"
+        android:text="Quantity"
+        android:textAllCaps="true"
+        android:textColor="#000000" />
+
+
+    <TextView
+        android:id="@+id/boq_rate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:fontFamily="sans-serif-medium"
+        android:includeFontPadding="false"
+        android:padding="8dp"
+        android:text="Rate"
+        android:textAllCaps="true"
+        android:textColor="#000000" />
+
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2.5"
+        android:fontFamily="sans-serif-medium"
+        android:includeFontPadding="false"
+        android:maxLines="1"
+        android:padding="8dp"
+        android:text="Rate In Words"
+        android:textAllCaps="true"
+        android:textColor="#000000" />
+
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        android:layout_weight="1.5"
+        android:fontFamily="sans-serif-medium"
+        android:includeFontPadding="false"
+        android:maxLines="1"
+        android:padding="8dp"
+        android:text="Amount"
+        android:textAllCaps="true"
+        android:textColor="#000000" />
+
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        android:layout_weight="2"
+        android:fontFamily="sans-serif-medium"
+        android:includeFontPadding="false"
+        android:maxLines="1"
+        android:padding="8dp"
+        android:text="Remarks"
+        android:textAllCaps="true"
+        android:textColor="#000000" />
+
+</LinearLayout>
